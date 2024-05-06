@@ -1,21 +1,13 @@
 # Lab04---Memoria
 
 1. Considerando a estrutura de dados celula, crie três instâncias do objeto célula (três valores na lista);
-
-   inserção de novos elementos na lista
-   
+  
 void insere_novos_elementos(celula **lista, int valor){
     celula *nova_celula = (celula *) malloc(sizeof(celula));
     nova_celula -> conteudo = valor;
     nova_celula -> prox = *lista;
     *lista = nova_celula;
 }
-
-Adicionando três elementos na lista
-
-insere_novos_elementos(&lista, 0);
-insere_novos_elementos(&lista, 1);
-insere_novos_elementos(&lista, 2);
 
    
 2. Construa uma função que imprima todos os valores da lista;
